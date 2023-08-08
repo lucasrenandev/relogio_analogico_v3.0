@@ -11,6 +11,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: #000;
+    color: #fff;
     display: grid;
     place-content: center;
     text-align: center;
@@ -24,7 +25,6 @@ body {
     border-radius: 50px;
     border-top-left-radius: 250px;
     border-top-right-radius: 250px;
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -54,40 +54,40 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
-.analog-clock .number1 {
+.analog-clock .number-1 {
     transform: rotate(30deg);
 }
-.analog-clock .number2 {
+.analog-clock .number-2 {
     transform: rotate(60deg);
 }
-.analog-clock .number3 {
+.analog-clock .number-3 {
     transform: rotate(90deg);
 }
-.analog-clock .number4 {
+.analog-clock .number-4 {
     transform: rotate(120deg);
 }
-.analog-clock .number5 {
+.analog-clock .number-5 {
     transform: rotate(150deg);
 }
-.analog-clock .number6 {
+.analog-clock .number-6 {
     transform: rotate(180deg);
 }
-.analog-clock .number7 {
+.analog-clock .number-7 {
     transform: rotate(210deg);
 }
-.analog-clock .number8 {
+.analog-clock .number-8 {
     transform: rotate(240deg);
 }
-.analog-clock .number9 {
+.analog-clock .number-9 {
     transform: rotate(270deg);
 }
-.analog-clock .number10 {
+.analog-clock .number-10 {
     transform: rotate(300deg);
 }
-.analog-clock .number11 {
+.analog-clock .number-11 {
     transform: rotate(330deg);
 }
-.analog-clock .number12 {
+.analog-clock .number-12 {
     transform: rotate(0);
 }
 
@@ -96,7 +96,6 @@ body {
     position: absolute;
     bottom: 50%;
     border: 2px solid #00eeff;
-    background-color: #111;
     border-radius: 20px;
     transform-origin: bottom;
 }
@@ -104,6 +103,7 @@ body {
 .analog-clock .hours {
     width: 10px;
     height: 35%;
+    background-color: #000;
     z-index: 1;
 }
 .analog-clock .hours::after {
@@ -122,6 +122,7 @@ body {
 .analog-clock .minutes {
     width: 10px;
     height: 40%;
+    background-color: #000;
     z-index: 2;
 }
 .analog-clock .minutes::after {
@@ -146,11 +147,11 @@ body {
 .analog-clock .seconds::after {
     content: '';
     position: absolute;
-    top: -20px;
+    top: -18px;
     left: 50%;
     transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #ff0000;
     border-radius: 50%;
     box-shadow: 0 0 10px #ff0000;
@@ -159,9 +160,8 @@ body {
 .analog-clock::after  {
     content: '';
     position: absolute;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #fff;
+    width: 16px;
+    height: 16px;
     background-color: #fff;
     border-radius: 50%;
     z-index: 4;
@@ -171,24 +171,22 @@ body {
 .digital-clock {
     width: 390px;
     height: 75px;
-    background-color: transparent;
     border: 2px solid #00eeff;
     border-radius: 50px;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 5px #00eeff;
 }
 
-.time h2 {
+.digital-clock .time h2 {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1;
 }
 
-.time small {
+.digital-clock .time small {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 1px;
